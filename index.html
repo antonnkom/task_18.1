@@ -237,8 +237,24 @@
                         <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br>
                             Leave a request below and you will receive a link to the broadcast.</p>
 
-                        <form action="/" method="post">
+                        <form action="/" method="post" class="control-form">
+                            <label for="control-name" class="label">Name
+                                <input type="text" id="control-name" class="input" name="control-name" placeholder="What is your name:" />
+                            </label>
 
+                            <label for="control-phone" class="label">Phone
+                                <input type="text" id="control-phone" class="input" name="control-phone" placeholder="Your phone number:" />
+                            </label>
+
+                            <div class="control-checkbox">
+                                <label for="control-agree" class="label-checkbox">
+                                    <input type="checkbox" id="control-agree" class="checkbox" name="control-agree" value="1">
+                                    <span class="fake-checkbox"></span>
+                                    <span class="text-checkbox">I agree to the processing of personal data</span>
+                                </label>
+                            </div>
+
+                            <button id="control-submit" class="button submit">Submit</button>
                         </form>
                     </div>
                 </div>

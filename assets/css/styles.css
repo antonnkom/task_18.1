@@ -3,6 +3,7 @@
     --sf-orange-opacity: #E3B8734D;
     --sf-black-back: #131313;
     --sf-black-subtitle: #181818;
+    --sf-font-base: #363636;
 }
 
 body {
@@ -39,6 +40,33 @@ body * {
 
 .button-italic {
     font-style: italic;
+}
+
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3636364D;
+    width: 100%;
+    padding: 0 0 8px 0;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+    color: var(--sf-font-base);
+}
+
+.label {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: #36363680;
+    width: 231px;
+}
+
+.submit {
+    width: 200px;
 }
 
 h1,
@@ -385,6 +413,7 @@ a {
     width: 817px;
     height: 434px;
     margin: 30px auto 60px auto;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .15);
 }
 
 .control-video {
@@ -407,4 +436,74 @@ a {
     margin-top: -42px;
     margin-right: -42px;
     cursor: pointer;
+}
+
+.control-form-container {
+    padding: 35px 0;
+}
+
+.control-form-container::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 55px;
+    height: 1.5px;
+    background-color: var(--sf-orange);
+    top: -34px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.control-form-container p {
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    width: 681px;
+    margin: 0 auto;
+}
+
+.control-form {
+    display: flex;
+    width: 769px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 90px auto 0 auto;
+}
+
+.control-checkbox {
+    order: 1;
+    margin: 33px auto 0 auto;
+}
+
+.label-checkbox {
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--sf-black-subtitle);
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake-checkbox {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: var(--sf-orange);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 1px;
+}
+
+.fake-checkbox::before{
+    content: url(../../images/svg/icon-check.svg);
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake-checkbox::before{
+    opacity: 1;
 }
