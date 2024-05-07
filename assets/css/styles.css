@@ -666,25 +666,28 @@ a {
 
 }
 
-.advantages-form .input {
+.input-white {
     border-color: rgba(255, 255, 255, .5);
 }
 
-.advantages-form .input::placeholder {
+.input-white::placeholder {
     color: #fff;
 }
 
 .advantages-form .label {
-    color: rgba(255, 255, 255, .5);
     width: 100%;
+}
+
+.label-white {
+    color: rgba(255, 255, 255, .5);
     margin-bottom: 48px;
 }
 
-.advantages-form .label:last-of-type {
+.label-white:last-of-type {
     margin-bottom: 16px;
 }
 
-.advantages-form .button {
+.button-in-black {
     position: relative;
     left: 50%;
     margin-top: 39px;
@@ -741,7 +744,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 39px 0 75px 0;
+    margin: 39px 0 0 0;
 }
 
 .review__item {
@@ -848,6 +851,44 @@ a {
     background-image: url(../../images/svg/icon-list.svg);
 }
 
+/* QUESTIONS */
+.questions {
+    width: 100%;
+    position: relative;
+}
+
+.questions-overflow {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-image: image-set(
+      url('../../images/bg-questions.avif') type('image/avif'),
+      url('../../images/bg-questions.webp') type('image/webp'),
+      url('../../images/bg-questions.png') type('image/png'));
+    background-size: cover;
+    background-position: center;
+    opacity: .05;
+}
+
+.questions-overflow:last-child {
+    left: 50%;
+    transform: scale(-1, 1);
+}
+
+.questions-form {
+    position: relative;
+    width: 883px;
+    padding: 35px 181px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.questions-form h2.subtitle::before,
+.questions-form h2.subtitle::after {
+    content: none;
+}
+
 /* MAP */
 .map {
     position: relative;
@@ -875,4 +916,29 @@ a {
     width: 925px;
     margin: 0 auto;
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .15);
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 26px 0 43px 0;
+}
+
+.social-networks__item {
+    padding: 0 7.5px;
+}
+
+.social-networks__link {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sf-orange);
+    border-radius: 50%;
 }
