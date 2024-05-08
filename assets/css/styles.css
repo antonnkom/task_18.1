@@ -589,7 +589,6 @@ a {
         align-items: center;
         cursor: pointer;
         top: 50%;
-        margin-top: -14px;
     }
 
     .slider-button-prev {
@@ -1195,6 +1194,11 @@ a {
     .slider-catalog-container {
         position: relative;
         z-index: 1;
+    }
+
+    .catalog-slider .slider-button-next,
+    .catalog-slider .slider-button-prev {
+        margin-top: -14px;
     }
 }
 
