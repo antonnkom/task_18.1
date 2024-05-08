@@ -142,7 +142,7 @@ a {
     color: var(--sf-orange);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .container {
         width: 100%;
         margin: 0;
@@ -232,7 +232,7 @@ a {
     margin-right: 45px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .header-container {
         height: 70px;
     }
@@ -258,7 +258,7 @@ a {
       url('../../images/hero.avif') type('image/avif'),
       url('../../images/hero.webp') type('image/webp'),
       url('../../images/hero.jpg') type('image/jpeg'));
-    background-position-x: center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -519,7 +519,7 @@ a {
     cursor: default;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .projects {
         padding-top: 36px;
     }
@@ -727,7 +727,7 @@ a {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .control {
         background-color: var(--sf-black-back);
     }
@@ -778,6 +778,19 @@ a {
     .control-form .button {
         width: 100%;
         margin-bottom: -25px;
+    }
+
+    .control-form .button {
+        width: 339px;
+        margin-bottom: -25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .control-form .button {
+        width: 100%;
     }
 }
 
@@ -855,7 +868,7 @@ a {
     top: calc(100% - 28px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .services {
         padding-top: 85px;
         padding-bottom: 36px;
@@ -1024,7 +1037,7 @@ a {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .advanteges {
         display: none;
     }
@@ -1146,7 +1159,7 @@ a {
     margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .gallery > .overflow,
     .gallery-nav,
     .gallery-col {
@@ -1313,7 +1326,7 @@ a {
     background-image: url(../../images/svg/icon-list.svg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .reviews {
         display: none;
     }
@@ -1387,7 +1400,7 @@ a {
     box-shadow: 0px 5px 20px 0px #E3B8731A;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .questions {
         background-color: var(--sf-black-back);
         height: 100%;
@@ -1412,8 +1425,14 @@ a {
     }
 
     .questions-form .button {
+        width: 339px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions-form .button {
         width: 100%;
-        margin: 0;
     }
 }
 
@@ -1475,7 +1494,7 @@ a {
 .active {
     color: var(--sf-orange);
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .map {
         padding-top: 15px;
         background-image: none;
